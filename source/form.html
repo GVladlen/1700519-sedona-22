@@ -33,21 +33,21 @@
     <section class="page-intro">
       <h1>Sedona</h1>
       <div class="page-intro__wrapper">
-        <img class="page-intro__image" src="#" alt="Добро пожаловать в Седону"></img>
+        <img class="page-intro__image" src="#" alt="Добро пожаловать в Седону">
       </div>
     </section>
   </header>
 
   <main class="page-menu">
     <div class="review">
-      <h2 class="rewiew__title">Оставьте свой отзыв </h2>
+      <h2>Оставьте свой отзыв </h2>
       <p class="review__text">Помогите нашим отелям стать лучше! <br> Оставьте отзыв о них, а также о <br> посещенных
         Вами <br> достопримечательностях</p>
     </div>
     <form class="main-form" action="https://echo.htmlacademy.ru">
       <div class="form-information">
         <h2 class="form-information__title">Представьтесь</h2>
-        <div class="form-information__form-data">
+        <div class="form-information form-data">
           <div class="form-data__name">
             <label>Имя:</label>
             <p><input type="text" placeholder="Петр"></p>
@@ -61,22 +61,22 @@
             <p><input type="text" placeholder="Александрович"></p>
           </div>
         </div>
-        <div class="form-information__form-contacts">
+        <div class="form-information form-contacts">
           <div class="form-contacts__phone">
             <p>Контактный телефон*:</p>
             <p><input class="form-contacts__tel" type="tel" placeholder="Введите телефон"></p>
-            <p><input class="form-contacts__mg" type="image" src="img/phone.svg"></p>
+            <p><input class="form-contacts__img" type="image" src="img/phone.svg" alt="Телефон"></p>
           </div>
           <div class="form-contacts__email">
             <p>Электронная почта*:</p>
-            <p><input class="form-contacts__mail" type="email" placeholder="Введите e-mail" name=""></p>
-            <p><input class="form-contacts__img" type="image" src="img/mail.svg"></p>
+            <p><input class="form-contacts__mail" type="email" placeholder="Введите e-mail"></p>
+            <p><input class="form-contacts__img" type="image" src="img/mail.svg" alt="Письмо"></p>
           </div>
         </div>
       </div>
-      <div class="form-information__form-answer">
-        <ul class="form-answer__list" action="">
-          <h2>Ваше общее впечатление</h2>
+      <div class="form-information form-answer">
+        <h2>Ваше общее впечатление</h2>
+        <ul class="form-answer__list">
           <li class="form-answer__result-first">
             <p><input type="radio" checked></p>
             <p>Скорее положительное</p>
@@ -90,26 +90,28 @@
               <p>Затрудняюсь ответить </p>
           </li>
         </ul>
-
-        <ul class="form-information__form-visits__list" action="">
+        <div class="form-information form-visits">
           <h2 class="">Посещенные <br> достопримечательности</h2>
-          <li class="form-visits__item">
-            <p><input type="checkbox" name="bridge" checked>
-              <p>Мост дьявола</p>
-          </li>
-          <li class="form-visits__item">
-            <p><input type="checkbox" name="mountain" checked></p>
-            <p>Гора колокол</p>
-          </li>
-          <li class="form-visits__item">
-            <p><input type="checkbox" name="park" checked></p>
-            <p>Слайд-парк</p>
-          </li>
-          <p><input type="checkbox" name="rock"></p>
-          <p>Красные скалы</p>
-        </ul>
-
-        <div class="feedback" action="https://echo.htmlacademy.ru">
+          <ul class="form-information__list form-visits__list">
+            <li class="form-visits__item">
+              <p><input type="checkbox" name="bridge" checked>
+                <p>Мост дьявола</p>
+            </li>
+            <li class="form-visits__item">
+              <p><input type="checkbox" name="mountain" checked></p>
+              <p>Гора колокол</p>
+            </li>
+            <li class="form-visits__item">
+              <p><input type="checkbox" name="park" checked></p>
+              <p>Слайд-парк</p>
+            </li>
+            <li class="form-visits__item">
+              <p><input type="checkbox" name="rock"></p>
+              <p>Красные скалы</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback">
           <h2>Опишите свои эмоции</h2>
           <p><textarea name="comment" placeholder="Опишите подробно все свои восторги "></textarea></p>
           <p><input class="feedback__button" type="submit" value="Отправить отзыв"></p>
