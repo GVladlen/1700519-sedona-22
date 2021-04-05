@@ -25,7 +25,7 @@
             <a href="">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -38,83 +38,83 @@
     </section>
   </header>
 
-  <main class="page-menu">
-    <div class="review">
+  <main class="page-main">
+    <div class="page-main review">
       <h2>Оставьте свой отзыв </h2>
-      <p class="review__text">Помогите нашим отелям стать лучше! <br> Оставьте отзыв о них, а также о <br> посещенных
-        Вами <br> достопримечательностях</p>
+      <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+        Вами достопримечательностях</p>
     </div>
-    <form class="main-form" action="https://echo.htmlacademy.ru">
+    <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-information">
-        <h2 class="form-information__title">Представьтесь</h2>
+        <h2 class="form-information__title">Представьтесь:</h2>
         <div class="form-information form-data">
           <div class="form-data__name">
             <label>Имя:</label>
-            <p><input type="text" placeholder="Петр"></p>
+            <input type="text" placeholder="Петр">
           </div>
           <div class="form-data__family">
             <label>Фамилия:</label>
-            <p><input type="text" placeholder="Иванов"></p>
+            <input type="text" placeholder="Иванов">
           </div>
           <div class="form-data__patronymic">
             <label>Отчество:</label>
-            <p><input type="text" placeholder="Александрович"></p>
+            <input type="text" placeholder="Александрович">
           </div>
         </div>
         <div class="form-information form-contacts">
+          <h2>Контактная информация:</h2>
           <div class="form-contacts__phone">
-            <p>Контактный телефон*:</p>
-            <p><input class="form-contacts__tel" type="tel" placeholder="Введите телефон"></p>
-            <p><input class="form-contacts__img" type="image" src="img/phone.svg" alt="Телефон"></p>
+            <label>Контактный телефон*:
+              <input class="form-contacts__tel" type="tel" placeholder="Введите телефон">
+            </label>
+            <label>
+              <input class="form-contacts__img" type="image" src="img/phone.svg" alt="telephone">
+            </label>
           </div>
           <div class="form-contacts__email">
-            <p>Электронная почта*:</p>
-            <p><input class="form-contacts__mail" type="email" placeholder="Введите e-mail"></p>
-            <p><input class="form-contacts__img" type="image" src="img/mail.svg" alt="Письмо"></p>
+            <label>Электронная почта*:
+              <input class="form-contacts__mail" type="email" placeholder="Введите e-mail">
+            </label>
+            <label>
+              <input class="form-contacts__img" type="image" src="img/mail.svg" alt="mail">
+            </label>
           </div>
         </div>
       </div>
       <div class="form-information form-answer">
-        <h2>Ваше общее впечатление</h2>
+        <h2>Ваше общее впечатление:</h2>
         <ul class="form-answer__list">
           <li class="form-answer__result-first">
-            <p><input type="radio" checked></p>
-            <p>Скорее положительное</p>
+            <label><input type="radio" checked>Скорее положительное</label>
           </li>
           <li class="form-answer__result-second">
-            <p><input type="radio">
-              <p>Скорее отрицательное</p>
+            <label><input type="radio">Скорее отрицательное</label>
           </li>
           <li class="form-answer__result-third">
-            <p><input type="radio">
-              <p>Затрудняюсь ответить </p>
+            <label><input type="radio">Затрудняюсь ответить </label>
           </li>
         </ul>
         <div class="form-information form-visits">
-          <h2 class="">Посещенные <br> достопримечательности</h2>
+          <h2 class="">Посещенные достопримечательности:</h2>
           <ul class="form-information__list form-visits__list">
             <li class="form-visits__item">
-              <p><input type="checkbox" name="bridge" checked>
-                <p>Мост дьявола</p>
+              <label><input type="checkbox" name="bridge" checked>Мост дьявола</label>
             </li>
             <li class="form-visits__item">
-              <p><input type="checkbox" name="mountain" checked></p>
-              <p>Гора колокол</p>
+              <label><input type="checkbox" name="mountain" checked>Гора колокол</label>
             </li>
             <li class="form-visits__item">
-              <p><input type="checkbox" name="park" checked></p>
-              <p>Слайд-парк</p>
+              <label><input type="checkbox" name="park" checked>Слайд-парк</label>
             </li>
             <li class="form-visits__item">
-              <p><input type="checkbox" name="rock"></p>
-              <p>Красные скалы</p>
+              <label><input type="checkbox" name="rock">Красные скалы</label>
             </li>
           </ul>
         </div>
-        <div class="feedback">
-          <h2>Опишите свои эмоции</h2>
-          <p><textarea name="comment" placeholder="Опишите подробно все свои восторги "></textarea></p>
-          <p><input class="feedback__button" type="submit" value="Отправить отзыв"></p>
+        <div class="form-information feedback">
+          <h2>Опишите свои эмоции:</h2>
+          <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+          <input class="feedback__button" type="submit" value="Отправить отзыв">
         </div>
       </div>
     </form>
@@ -128,13 +128,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="">Твиттер</a>
+            <a class="social__link social__link--twitter" href="#">Твиттер</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtybe" href="">Ютуб</a>
+            <a class="social__link social__link--youtybe" href="#">Ютуб</a>
           </li>
         </ul>
       </div>
