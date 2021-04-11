@@ -2,6 +2,7 @@
   font-family: $page-font;
   text-transform: uppercase;
 }
+
 .features__list,
 .features__list-grey {
   @include list-reset;
@@ -15,6 +16,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .features__item {
   position: relative;
   padding: 19px 0 0 70px;
@@ -22,12 +24,15 @@
   width: 290px;
   height: auto;
 }
+
 .features__item--gift {
   margin-top: -15px;
 }
+
 .features__item--food {
   margin-top: -15px;
 }
+
 .features__title {
   margin: 0;
   padding: 0;
@@ -37,6 +42,7 @@
   font-weight: bold;
   color: #000000;
 }
+
 .features__description {
   margin: 0;
   padding: 0;
@@ -45,14 +51,17 @@
   font-weight: normal;
   color: #333333;
 }
+
 .features__list-grey {
   text-align: center;
   background-color: #eeeeee;
 }
+
 .features__item-grey {
   position: relative;
   min-height: 168px;
 }
+
 .features__title-grey {
   margin: 0;
   padding: 26px 0 10px 0;
@@ -61,6 +70,7 @@
   font-weight: bold;
   color: #000000;
 }
+
 .features__number-grey,
 .features__description-grey {
   font-size: 14px;
@@ -68,9 +78,9 @@
   font-weight: normal;
   color: #333333;
 }
+
 .features__description-grey {
   margin: 0 auto;
   padding: 15px 0 0 0;
   width: 250px;
 }
-
