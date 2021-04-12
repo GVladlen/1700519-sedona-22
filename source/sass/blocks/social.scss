@@ -1,0 +1,14 @@
+.social {
+  @include list-reset;
+  margin: 0 auto 37px auto;
+  display: flex;
+  flex-direction: row;
+  width: 152px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: $main-blue;
+}
