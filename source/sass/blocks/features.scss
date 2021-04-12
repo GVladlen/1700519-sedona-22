@@ -3,6 +3,13 @@
   text-transform: uppercase;
 }
 
+.features__welcome{
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+
 .features__list,
 .features__list-grey {
   @include list-reset;
