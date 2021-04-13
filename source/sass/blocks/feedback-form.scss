@@ -1,0 +1,74 @@
+.feedback-form {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+  font-family: $page-font;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.feedback-form__bold {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 18px 0 0;
+  margin-bottom: 22px;
+}
+
+.feedback-form__wrapper {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.feedback-form__item--name,
+.feedback-form__item--contacts,
+.feedback-form__item--genfeedback,
+.feedback-form__item--visited-places {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #d6d6d6;
+    bottom: 0;
+    left: -20px;
+  }
+}
+
+.feedback-form__item--contacts {
+  padding-bottom: 17px;
+}
+
+.feedback-form__button {
+  padding-top: 1px;
+  padding-right: 18px;
+}
+
+.feedback-form__textarea {
+  border: none;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: -5px;
+  font-family: $page-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  padding: 16px 20px 20px 20px;
+  margin-bottom: 45px;
+}
