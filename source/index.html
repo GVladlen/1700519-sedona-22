@@ -12,10 +12,18 @@
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Фото и видео</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Форма отзыва</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Html academy</a></li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Html academy</a>
+          </li>
         </ul>
         <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
         <a class="page-header__logo page-header__logo--mobile">
@@ -30,19 +38,18 @@
         <h2 class="visually-hidden">Sedona</h2>
         <div class="advice__image advice__image--index">
           <img src="img/text-index.svg" alt="Добро пожаловать в Седону!" width="280" height="213">
-          <div class="advice__triangle"></div>
-        </div>
-        <div class="advice__welcome">
-          <b class="advice__slogan advice__slogan--small">Седона — небольшой городок в Аризоне, заслуживающий
-            большего!</b>
-          <p class="advice__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </section>
 
       <section class="features">
+        <div class="features__welcome">
+          <h2 class="features__slogan features__slogan--small">Седона — небольшой городок в Аризоне, заслуживающий
+            большего!
+          </h2>
+          <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="feature-photo feature-photo--first">
-          <div class="feature-photo__triangle"></div>
           <div class="feature-photo__outline">
             <h3 class="feature-photo__title">Настоящий городок</h3>
             <span class="feature-photo__number">— №1 —</span>
@@ -75,7 +82,7 @@
               осмелитесь, конечно</p>
           </div>
           <div class="feature-photo__image">
-            <img class="feature-photo__img feature-photo__img--2" src="img/photo-bridge@1x 1.jpg"
+            <img class="feature-photo__img feature-photo__img--second" src="img/photo-bridge@1x 1.jpg"
               alt="Мост Дьявола в Седоне">
           </div>
         </div>
@@ -124,19 +131,19 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Твиттер</span>
-            <img src="../source/img/icon-twitter.svg" alt="">
+            <img class="social__link-svg" src="img/icon-twitter.svg" alt="">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Фейсбук</span>
-            <img src="../source/img/icon-facebook.svg" alt="">
+            <img class="social__link-svg" src="img/icon-facebook.svg" alt="">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Ютуб</span>
-            <img src="../source/img/icon-youtube.svg" alt="">
+            <img class="social__link-svg" src="img/icon-youtube.svg" alt="">
           </a>
         </li>
       </ul>
@@ -144,7 +151,7 @@
         <span class="copyright__info">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Ссылка на интенсив</span>
-          <img src="../source/img/htmlacademy.svg" alt="">
+          <img src="img/htmlacademy.svg" alt="">
         </a>
       </p>
     </footer>

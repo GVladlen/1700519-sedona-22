@@ -12,3 +12,17 @@
   margin-right: 6px;
   background-color: $main-blue;
 }
+
+.social__link {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  width: 46px;
+  height: 48px;
+}
+
+.social__link-svg {
+  position: absolute;
+  top: 17px;
+  left: 14px;
+}
