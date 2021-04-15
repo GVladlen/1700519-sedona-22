@@ -1,0 +1,51 @@
+.catalog {
+  position: relative;
+  font-family: $page-font;
+  width: 280px;
+  min-height: 415px;
+  margin: 0 auto;
+  padding-top: 22px;
+}
+
+.catalog__outline {
+  margin: 0;
+  padding: 15px 0 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__author-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.catalog__author-description,
+.catalog__author {
+  display: inline-block;
+}
+
+.catalog__likes {
+  position: relative;
+  display: block;
+  padding-top: 9px;
+  padding-right: 14px;
+}
+
+.catalog__likes-svg {
+  top: 7px;
+  left: 1px;
+  margin-right: 14px;
+  cursor: pointer;
+}
