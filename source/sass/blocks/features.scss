@@ -3,11 +3,31 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .features__welcome {
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 6px;
+}
+
+.features__slogan {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__slogan {
+    font-size: 30px;
+  }
 }
 
 .features__list,
@@ -24,12 +44,35 @@
   flex-direction: column;
 }
 
+@media (min-width: $tablet-width) {
+  .features__list {
+    min-height: 330px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    padding-bottom: 81px;
+  }
+}
+
 .features__item {
   position: relative;
   padding: 19px 0 0 70px;
   margin: 0 0 22px 0;
   width: 250px;
   height: auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__item--gift {
@@ -38,6 +81,14 @@
 
 .features__item--food {
   margin-top: -15px;
+
+  &::before {
+    top: 9px;
+    left: 24px;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-gift.svg");
+  }
 }
 
 .features__title {
@@ -90,4 +141,25 @@
   margin: 0 auto;
   padding: 15px 0 0 0;
   width: 250px;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    padding-bottom: 81px;
+  }
+}
+
+.features__item--house::before {
+  top: 9px;
+  left: 21px;
+  width: 37px;
+  height: 36px;
+  background-image: url("../img/icon-house.svg");
 }

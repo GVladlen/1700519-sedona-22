@@ -18,6 +18,14 @@
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .offer__question {
+    font-size: 30px;
+    padding: 56px 0 0 0;
+    margin: 0 0 31px 0;
+  }
+}
+
 .offer__description {
   width: 270px;
   margin: 0 auto 35px auto;
@@ -26,6 +34,19 @@
   line-height: 24px;
   font-weight: normal;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .offer__description {
+    width: 450px;
+    margin: 0 auto 42px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__description {
+    margin: 0 auto 47px auto;
+  }
 }
 
 .offer__open-search {
