@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +17,7 @@
             <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Форма отзыва</a>
@@ -25,6 +26,7 @@
             <a class="site-list__link" href="#">Html academy</a>
           </li>
         </ul>
+        <p class="page-header__paragraph"></p>
         <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
         <a class="page-header__logo page-header__logo--mobile">
           <img class="page-header__logo-image" src="img/logotype.svg" alt="City of Sedona">
@@ -34,16 +36,15 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Отзывы</h1>
-      <section class="advice">
-        <h2 class="visually-hidden">Формы отзыва</h2>
+      <section class="advice advice--form">
+        <h2 class="visually-hidden">Вступительный раздел с баннером о форме отзыва</h2>
         <div class="advice__image advice__image--form">
-          <img src="img/Sedona.svg" alt="Добро пожаловать в Седону!" width="229" height="39">
+          <img src="img/sedona.svg" alt="Добро пожаловать в Седону!" width="229" height="39">
+          <div class="advice__triangle"></div>
         </div>
-        <div>
-          <h2 class="advice__slogan">Оставьте свой отзыв</h2>
-          <p class="advice__intro advice__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
-            также о посещенных вами достопримечательностях</p>
-        </div>
+        <b class="advice__slogan">Оставьте свой отзыв</b>
+        <p class="advicer__intro advice__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
       </section>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
@@ -87,7 +88,7 @@
               </label>
               <p class="form-contact__input-container">
                 <input class="form-contact__input" type="tel" name="tel" placeholder="Введите телефон">
-                <input class="form-contact__logo form-contact__logo--phone" type="image" src="img/phone.svg"
+                <input class="form-contact__logo form-contact__logo--phone" type="image" src="img/icon-phone.svg"
                   alt="Иконка телефона">
               </p>
             </div>
@@ -99,7 +100,7 @@
               </label>
               <p class="form-contact__input-container">
                 <input class="form-contact__input" type="email" name="email" placeholder="Введите e-mail">
-                <input class="form-contact__logo form-contact__logo--env" type="image" src="img/mail.svg"
+                <input class="form-contact__logo form-contact__logo--env" type="image" src="img/icon-mail.svg"
                   alt="Иконка e-mail">
               </p>
             </div>
