@@ -11,6 +11,12 @@
   padding-bottom: 9px;
 }
 
+@media (min-width: $tablet-width) {
+  .advice--form {
+    border-bottom: none;
+  }
+}
+
 .advice__image {
   position: relative;
   width: 320px;
@@ -74,6 +80,23 @@
   }
 }
 
+.advice__image--form {
+  min-height: 290px;
+  margin-bottom: 74px;
+}
+
+@media (min-width: $desktop-width) {
+  .advice__image {
+    width: 100%;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  &--form {
+    min-height: 301px;
+    margin-bottom: 111px;
+  }
+}
+
 .advice__triangle {
   position: absolute;
   left: 0;
@@ -95,9 +118,73 @@
 }
 
 @media (min-width: $desktop-width) {
-  .banner__triangle {
+  .advice__triangle {
     background-image: url("../img/triangle-desktop.svg");
     background-size: cover;
     min-height: 57px;
+  }
+}
+
+.advice__slogan {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .advice__slogan {
+    font-size: 30px;
+  }
+}
+
+.advice__intro {
+  margin: 0;
+  padding: 25px 0 0;
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+.advice__intro--form,
+.advice__intro--photo {
+  width: 275px;
+  margin: 0 auto;
+  padding-top: 25px;
+  line-height: 24px;
+}
+
+.advice__intro--photo {
+  padding-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .advice__intro--photo {
+    width: 445px;
+    padding-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advice__intro--photo {
+    padding-bottom: 64px;
+  }
+}
+
+.advice__intro--form {
+  padding-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .advice__intro--form {
+    width: 445px;
+    padding-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advice__intro--form {
+    padding-bottom: 31px;
   }
 }
