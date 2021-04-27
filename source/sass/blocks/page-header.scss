@@ -3,19 +3,6 @@
   text-align: center;
 }
 
-.page-header__paragraph {
-  min-height: 55px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__paragraph {
-    display: none;
-  }
-}
-
 .page-header__logo {
   position: absolute;
   top: 0;
@@ -32,11 +19,5 @@
   .page-header__logo-image {
     width: 187px;
     height: 96px;
-  }
-}
-
-@media (max-width: 767px) {
-  .page-header__logo--mobile {
-    top: 224px;
   }
 }
