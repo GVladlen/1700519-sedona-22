@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +14,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Фото и видео</a>
@@ -25,59 +26,77 @@
             <a class="site-list__link" href="#">Html academy</a>
           </li>
         </ul>
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
-        <a class="page-header__logo page-header__logo--mobile">
-          <img class="page-header__logo-image" src="img/logotype.svg" alt="City of Sedona">
-        </a>
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button">
+          <span class="visually-hidden">Кнопка меню в мобильной версии
+          </span>
+        </button>
       </nav>
+      <p class="page-header__paragraph"></p>
+      <a class="page-header__logo page-header__logo--mobile">
+        <img class="page-header__logo-image" src="img/logotype.svg" alt="City of Sedona">
+      </a>
     </header>
 
     <main class="page-main">
+      <h1 class="visually-hidden">Каталог с фото и видео</h1>
       <section class="advice">
-        <h1 class="visually-hidden">Фото и видео</h1>
-        <div class="advice__image advice__image--form">
+        <h2>Фото и видео о Седоне</h2>
+        <div class="advice__image advice__image--photo">
           <img src="img/Sedona.svg" alt="Добро пожаловать в Седону!" width="229" height="39">
+          <div class="advise__triangle"></div>
         </div>
-        <div class="advise__triangle">
-          <img src="img/triangle-mobile.svg" alt="">
-        </div>
-        <div>
-          <h2 class="advice__slogan">Фото и видео</h2>
-          <p class="advice__intro advice__intro--form">Не можете решиться на путешествие из-за курса? Фотографии помогут
-            вам забыть о политике и экономике.</p>
-        </div>
+        <h2 class="advice__slogan">Фото и видео</h2>
+        <p class="advice__intro advice__intro--photo">Не можете решиться на путешествие из-за курса? Фотографии
+          помогут вам забыть о политике и экономике.</p>
       </section>
-      <section class="page-catalog">
+      <section class="catalogs">
         <h2 class="visually-hidden">Раздел с фото и видео о Седоне</h2>
-        <div class="page-catalog__wrapper">
-          <div class="catalog">
-            <h3 class="visually-hidden">Неродные просторы</h3>
-            <img class="catalog__image" src="img/photo-1-mobile.jpg" alt="Неродные просторы">
-            </a>
-            <ul class="catalog__outline">
-              <p class="catalog__author-wrapper">
-                <b class="catalog__title">Неродные просторы</b>
-                <span class="catalog__author-description">Автор фото:</span>
-                <span class="catalog__author">Борис</span>
-              </p>
-              <span class="catalog__likes">
-                <img class="catalog__likes-svg" src="img/like-icon.svg" alt="like">1350
-              </span>
-            </ul>
+        <div class="catalogs__wrapper">
+          <div class="catalogs catalog--first">
+            <div class="catalog">
+              <h3 class="visually-hidden">Неродные просторы</h3>
+              <img class="catalog__image" src="img/photo-1-mobile.jpg" alt="Неродные просторы">
+              </a>
+              <ul class="catalog__outline">
+                <li>
+                  <div class="catalog__author-wrapper">
+                    <b class="catalog__title">Неродные просторы</b>
+                    <span class="catalog__author-description">Автор фото:</span>
+                    <span class="catalog__author">Борис</span>
+                  </div>
+                  <span class="catalog__likes catalog__likes--first">
+                    <svg display="none">
+                      <symbol id="like" viewBox="0 0 23 21" width="23" height="21">
+                        <g>
+                          <path opacity="0.3"
+                            d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                            fill="black">
+                        </g>
+                      </symbol>
+                    </svg> 1350
+                    <svg class="catalog__likes-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+                    <use xlink:href="#like"></use>
+                    </svg>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="catalog">
             <h3 class="visually-hidden">Местная растительность</h3>
             <img class="catalog__image" src="img/photo-2-mobile.jpg" alt="Местная растительность">
             </a>
             <ul class="catalog__outline">
-              <p class="catalog__author-wrapper">
-                <b class="catalog__title">Местная растительность</b>
-                <span class="catalog__author-description">Автор фото:</span>
-                <span class="catalog__author">Сергей</span>
-                <span class="catalog__likes">
-                  <img class="catalog__likes-svg" src="img/like-icon.svg" alt="like">143
-                </span>
-              </p>
+              <li>
+                <div class="catalog__author-wrapper">
+                  <b class="catalog__title">Местная растительность</b>
+                  <span class="catalog__author-description">Автор фото:</span>
+                  <span class="catalog__author">Сергей</span>
+                  <span class="catalog__likes">
+                    <img class="catalog__likes-svg" src="img/like-icon.svg" alt="like">143
+                  </span>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="catalog">
@@ -85,14 +104,16 @@
             <img class="catalog__image" src="img/photo-3-mobile.jpg" alt="Дорога на север">
             </a>
             <ul class="catalog__outline">
-              <p class="catalog__author-wrapper">
-                <b class="catalog__title">Дорога на север</b>
-                <span class="catalog__author-description">Автор фото:</span>
-                <span class="catalog__author">Петр</span>
-                <span class="catalog__likes">
-                  <img class="catalog__likes-svg" src="img/like-icon.svg" alt="like">96
-                </span>
-              </p>
+              <li>
+                <div class="catalog__author-wrapper">
+                  <b class="catalog__title">Дорога на север</b>
+                  <span class="catalog__author-description">Автор фото:</span>
+                  <span class="catalog__author">Петр</span>
+                  <span class="catalog__likes">
+                    <img class="catalog__likes-svg" src="img/like-icon.svg" alt="like">96
+                  </span>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="catalog">
@@ -100,47 +121,48 @@
             <img class="catalog__image" src="img/photo-4-desktop 1.jpg" alt="Мост дьявола">
             </a>
             <ul class="catalog__outline">
-              <p class="catalog__author-wrapper">
-                <b class="catalog__title">Мост дьявола</b>
-                <span class="catalog__author-description">Автор фото:</span>
-                <span class="catalog__author">Антон</span>
-                <span class="catalog__likes">
-                  <img class="catalog__likes-svg" src="img/like-icon.svg" alt="like">254
-                </span>
-              </p>
+              <li>
+                <div class="catalog__author-wrapper">
+                  <b class="catalog__title">Мост дьявола</b>
+                  <span class="catalog__author-description">Автор фото:</span>
+                  <span class="catalog__author">Антон</span>
+                  <span class="catalog__likes">
+                    <img class="catalog__likes-svg" src="img/like-icon.svg" alt="like">254
+                  </span>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="page-catalog__video video">
-            <div class="video__outline">
-              <b class="video__title">Все еще сомневаетесь?</b>
-              <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-                очередной раз!</p>
+        </div>
+        <div class="catalogs__video video">
+          <div class="video__outline">
+            <b class="video__title">Все еще сомневаетесь?</b>
+            <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+              очередной раз!</p>
+          </div>
+          <img class="video__player" src="img/video-mobile.jpg" alt="Видео">
+          <div class="video__control">
+            <div class="video__line">
+              <input class="slider" type="range" min="0" max="4000" step="1" value="3000">
             </div>
-            <img class="video__player" src="img/video-mobile.jpg" alt="Видео">
-            <div class="video__control">
-              <div class="video__line">
-                <input class="slider" type="range" min="0" max="4000" step="1" value="3000">
-              </div>
-              <div class="video__replay">
-                <button class="video__button video__button--replay">
-                  <img src="img/replay.svg" alt="Кнопка смотреть заново">
-                </button>
-              </div>
-              <div class="video__cc">
-                <button class="video__button video__button--cc">
-                  <img src="img/subtitles.svg" alt="Кнопка субтитров">
-                </button>
-              </div>
-              <div class="video__fullscreen">
-                <button class="video__button video__button--fullscreen">
-                  <img src="img/fullscreen.svg" alt="Кнопка включения полного экрана">
-                </button>
-              </div>
+            <div class="video__replay">
+              <button class="video__button video__button--replay">
+                <img src="img/replay.svg" alt="Кнопка смотреть заново">
+              </button>
+            </div>
+            <div class="video__cc">
+              <button class="video__button video__button--cc">
+                <img src="img/subtitles.svg" alt="Кнопка субтитров">
+              </button>
+            </div>
+            <div class="video__fullscreen">
+              <button class="video__button video__button--fullscreen">
+                <img src="img/fullscreen.svg" alt="Кнопка включения полного экрана">
+              </button>
             </div>
           </div>
         </div>
       </section>
-
     </main>
     <footer class="page-footer">
       <p class="page-footer__hash-wrapper">
