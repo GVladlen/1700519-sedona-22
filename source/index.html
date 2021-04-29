@@ -28,7 +28,11 @@
         </ul>
         <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
         <a class="page-header__logo page-header__logo--mobile">
-          <img class="page-header__logo-image" src="img/logotype.svg" alt="City of Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="City of Sedona">
+          </picture>
         </a>
       </nav>
     </header>
@@ -39,10 +43,8 @@
         <h2 class="visually-hidden">Sedona</h2>
         <div class="advice__image advice__image--index">
           <img src="img/text-index.svg" alt="Добро пожаловать в Седону!" width="280" height="39">
-          <div class="advise__triangle"></div>
         </div>
       </section>
-
       <section class="features">
         <div class="features__welcome">
           <h2 class="features__slogan features__slogan--small">Седона — небольшой городок в Аризоне, заслуживающий
