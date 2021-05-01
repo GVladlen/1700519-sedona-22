@@ -75,6 +75,10 @@
   }
 }
 
+.form-chbx__input {
+  display: none;
+}
+
 .form-chbx__input:focus + .form-chbx__label::before {
   background-color: #e5e5e5;
 }
@@ -87,7 +91,7 @@
   height: 20px;
   background-color: #000000;
   top: 4px;
-  left: 31px;
+  left: 33px;
   transform: rotate(45deg);
 
   &::before {

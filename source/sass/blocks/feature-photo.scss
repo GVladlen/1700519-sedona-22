@@ -10,15 +10,26 @@
   padding-top: 37px;
 }
 
-.feature-photo__triangle {
-  position: absolute;
-  top: -20px;
-  left: 0;
+.feature-photo-wrapper {
+  position: relative;
   width: 100%;
-  height: 50px;
-  background-image: url("/source/img/intro-triangle.svg");
+  height: 211px;
+  padding-top: 59px;
+  background-image: url("../img/white-triangle.svg");
   background-position: top;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .feature-photo-wrapper {
+    background-image: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature-photo-wrapper {
+    background-image: none;
+  }
 }
 
 .feature-photo__title {
@@ -26,13 +37,13 @@
   padding: 0;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .feature-photo__number {
   font-size: 14px;
   line-height: 21px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .feature-photo__description {
@@ -41,7 +52,7 @@
   padding: 0 0 39px;
   font-size: 14px;
   line-height: 21px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .feature-photo__image {
@@ -55,8 +66,11 @@
   display: block;
 }
 
-.feature-photo--first,
 .feature-photo--second {
   min-height: 211px;
   padding-top: 57px;
+}
+
+.feature-photo--first {
+  padding-top: 0;
 }

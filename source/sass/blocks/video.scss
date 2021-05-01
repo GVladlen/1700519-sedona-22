@@ -45,7 +45,7 @@
   display: block;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
   margin: 0;
   padding: 0;
@@ -73,7 +73,7 @@
   padding-top: 27px;
   font-size: 14px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -150,7 +150,7 @@
   }
 }
 
-.video__line-line {
+.video__line-controller {
   width: 235px;
   height: 3px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -160,7 +160,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .video__line-line {
+  .video__line-controller {
     width: 389px;
     margin-top: 46px;
     margin-left: 46px;
@@ -168,7 +168,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .video__line-line {
+  .video__line-controller {
     width: 540px;
   }
 }
@@ -196,6 +196,34 @@
 
 @media (min-width: $tablet-width) {
   .video__slider {
+    top: 43px;
+    left: 159px;
+  }
+}
+
+.video__runner {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 19px;
+  left: 58px;
+  cursor: pointer;
+}
+
+.video__runner:hover,
+.video__runner:focus {
+  background-color: #333333;
+}
+
+.video__runner:active {
+  background-color: #c1c1c1;
+}
+
+@media (min-width: $tablet-width) {
+  .video__runner {
     top: 43px;
     left: 159px;
   }

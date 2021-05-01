@@ -72,6 +72,7 @@
     left: -2px;
     cursor: pointer;
     z-index: 10;
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -84,5 +85,6 @@
     left: -2px;
     cursor: pointer;
     z-index: 10;
+    transform: rotate(-45deg);
   }
 }
