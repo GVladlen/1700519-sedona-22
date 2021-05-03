@@ -123,7 +123,7 @@
 @media (min-width: $desktop-width) {
   .advice__image--form {
     width: 100%;
-    background-image: url("../img/back-desktop@1x.jpg");
+    background-image: url("../img/back-desktop.jpg");
   }
 
   &--form {
@@ -152,18 +152,18 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-}
 
-.advice__intro--form,
-.advice__intro--catalog {
+  &--form,
+  &--catalog {
   width: 275px;
   margin: 0 auto;
   padding-top: 25px;
   line-height: 24px;
-}
+  }
 
-.advice__intro--catalog {
+  &--catalog {
   padding-bottom: 21px;
+  }
 }
 
 @media (min-width: $tablet-width) {
