@@ -108,6 +108,7 @@
 .catalog__author-wrapper {
   margin: 0;
   padding: 0;
+  height: 112px;
 }
 
 @media (min-width: $desktop-width) {
@@ -119,9 +120,9 @@
 .catalog__title {
   display: block;
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: -10px;
   padding: 0;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -152,10 +153,15 @@
 
 .catalog__likes-svg {
   position: absolute;
-  top: 7px;
+  bottom: 32px;
   left: 1px;
   margin-right: 14px;
+  height: 20px;
   cursor: pointer;
+  border: none;
+  background-image: url("../img/like-icon.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -167,8 +173,9 @@
   }
 
   .catalog__likes-svg {
-    top: 13px;
-    left: 4px;
+    top: 341px;
+    left: 22px;
+    background-color: #f2f2f2;
   }
 }
 
@@ -176,10 +183,6 @@
   .catalog__likes {
     background-color: transparent;
     color: $white;
-  }
-
-  &-svg {
-    fill: $white;
   }
 }
 
