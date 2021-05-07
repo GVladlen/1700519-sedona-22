@@ -83,52 +83,35 @@
   background-color: #e5e5e5;
 }
 
-.form-chbx__label-tick {
-  display: none;
+.form-chbx__input:checked ~ .form-chbx__label::after {
   position: absolute;
   content: "";
-  width: 4px;
-  height: 20px;
-  background-color: #000000;
+  width: 24px;
+  height: 17px;
   top: 4px;
-  left: 33px;
-  transform: rotate(45deg);
+  left: 17px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   &::before {
     position: absolute;
     content: "";
     width: 4px;
     height: 13px;
-    background-color: #000000;
     top: 12px;
     left: -5px;
-    transform: rotate(-90deg);
   }
 }
 
 @media (min-width: $tablet-width) {
-  .form-chbx__label-tick {
+  .form-chbx__label {
     left: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form-chbx__label-tick {
+  .form-chbx__label {
     left: 31px;
   }
-}
-
-.form-chbx__input:checked ~ .form-chbx__label-tick {
-  display: inline-block;
-}
-
-.form-chbx__label:active ~ .form-chbx__label-tick,
-.form-chbx__label:active ~ .form-chbx__label-tick::before {
-  background-color: #a4a4a4;
-}
-
-.form-chbx__input:disabled ~ .form-chbx__label-tick,
-.form-chbx__input:disabled ~ .form-chbx__label-tick::before {
-  display: inline-block;
-  background-color: #a4a4a4;
 }
