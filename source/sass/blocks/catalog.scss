@@ -161,7 +161,7 @@
   border: none;
   background-image: url("../img/like-icon.svg");
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -199,6 +199,7 @@
   }
 }
 
-.catalog__like {
-  visibility: hidden;
+.catalog__likes-number {
+  margin-left: 30px;
+  cursor: none;
 }
