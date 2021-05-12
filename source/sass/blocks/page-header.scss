@@ -8,6 +8,7 @@
   top: 0;
   left: 50%;
   z-index: 5;
+  transform: translateX(-50%);
 }
 
 .page-header__logo-image {
@@ -19,5 +20,11 @@
   .page-header__logo-image {
     width: 187px;
     height: 96px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header__logo--mobile {
+    top: 224px;
   }
 }
