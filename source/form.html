@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,7 +29,7 @@
             <a class="site-list__link" href="#">Html academy</a>
           </li>
         </ul>
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"></button>
         <a class="page-header__logo page-header__logo--mobile">
           <img class="page-header__logo-image" src="img/logotype.svg" alt="City of Sedona">
         </a>
@@ -176,7 +179,28 @@
         </a>
       </p>
     </footer>
+    <div class="pop-up pop-up--success">
+      <section class="pop-up__window pop-up__window--success">
+        <h3 class="visually-hidden">Всплывающее окно с сообщением о том, что ваш отзыв принят</h3>
+        <b class="pop-up__alert">Ваш отзыв отправлен!</b>
+        <p class="pop-up__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы
+          опубликуем его на сайте.</p>
+        <div class="pop-up__button-wrapper">
+          <button class="pop-up__button button" type="button" name="button-popup-close">Закрыть окно</button>
+        </div>
+      </section>
+    </div>
+    <div class="pop-up pop-up--failure">
+      <section class="pop-up__window pop-up__window--failure">
+        <h3 class="visually-hidden">Всплывающее окно с сообщением об ошибке во время отправки формы</h3>
+        <b class="pop-up__alert pop-up__alert--failure">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+        <p class="pop-up__description pop-up__description--failure">Проверьте поля, выделенные красным, скорее всего вы
+          забыли их заполнить</p>
+        <button class="pop-up__button pop-up__button--failure button" type="button" name="button-popup-fail">Oк</button>
+      </section>
+    </div>
   </div>
+  <script src="js/script-form.min.js"></script>
 </body>
 
 </html>
