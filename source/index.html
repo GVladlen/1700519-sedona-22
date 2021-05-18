@@ -5,13 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <script>
+    document.createElement("picture");
+
+  </script>
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="source/img/sprite.svg"></include>
+  </div>
   <div class="container">
     <header class="page-header">
       <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button">
+          <span class="visually-hidden">Кнопка меню в мобильной версии</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Главная</a>
@@ -26,9 +38,12 @@
             <a class="site-list__link" href="https://htmlacademy.ru">Html academy</a>
           </li>
         </ul>
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
         <a class="page-header__logo page-header__logo--mobile">
-          <img class="page-header__logo-image" src="img/logotype.svg" alt="Логотип сайта Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип сайта Седона">
+          </picture>
         </a>
       </nav>
     </header>
@@ -36,10 +51,9 @@
     <main class="page-main">
       <h1 class="visually-hidden">Седонa</h1>
       <div class="advice">
-        <div class="advice__wrapper--index">
-          <div class="advice__image advice__image--index">
-            <img src="img/text-index.svg" alt="Добро пожаловать в Седону!" width="280" height="39">
-          </div>
+        <div class="advice__image advice__image--index">
+          <img src="img/text-index.svg" alt="Добро пожаловать в Седону!" width="282" height="214">
+          <div class="advice__triangle"></div>
         </div>
       </div>
       <section class="features">
@@ -50,15 +64,18 @@
           <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="feature-photo feature-photo--first">
-          <div class="feature-photo__wrapper">
-            <div class="feature-photo__outline">
-              <h3 class="feature-photo__title">Настоящий городок</h3>
-              <span class="feature-photo__number">— №1 —</span>
-              <p class="feature-photo__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
+          <div class="feature-photo__triangle"></div>
+          <div class="feature-photo__outline">
+            <h3 class="feature-photo__title">Настоящий городок</h3>
+            <span class="feature-photo__number">— №1 —</span>
+            <p class="feature-photo__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="feature-photo__image">
-            <img class="feature-photo__img" src="img/photo-city@1x1.jpg" alt="Фото города Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/city-desktop@1x.jpg, img/city-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/city-tablet@1x.jpg, img/city-tablet@2x.jpg">
+              <img class="feature-photo__img" src="img/city-mobile@1x.jpg" alt="Фото города Седона">
+            </picture>
           </div>
         </div>
         <ul class="features__list">
@@ -84,7 +101,7 @@
               осмелитесь, конечно</p>
           </div>
           <div class="feature-photo__image">
-            <img class="feature-photo__img feature-photo__img--second" src="img/photo-bridge@1x1.jpg"
+            <img class="feature-photo__img feature-photo__img--second" src="img/bridge-mobile@1x.jpg"
               alt="Мост Дьявола в Седоне">
           </div>
         </div>
@@ -131,19 +148,27 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Твиттер</span>
-            <img class="social__link-svg" src="img/icon-twitter.svg" alt="">
+            <svg class="social__link-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="#fff">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Фейсбук</span>
-            <img class="social__link-svg" src="img/icon-facebook.svg" alt="">
+            <svg class="social__link-svg social__link-svg--fb" xmlns="http://www.w3.org/2000/svg" width="9" height="19"
+              fill="#fff">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Ютуб</span>
-            <img class="social__link-svg" src="img/icon-youtube.svg" alt="">
+            <svg class="social__link-svg social__link-svg--yt" xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+              fill="#fff">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -151,30 +176,12 @@
         <span class="copyright__info">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Ссылка на интенсив</span>
-          <img src="img/htmlacademy.svg" alt="">
+          <svg class="copyright__link-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="50">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </p>
     </footer>
-    <div class="pop-up pop-up--success">
-      <section class="pop-up__window pop-up__window--success">
-        <h3 class="visually-hidden">Всплывающее окно с сообщением о том, что ваш отзыв принят</h3>
-        <b class="pop-up__alert">Ваш отзыв отправлен!</b>
-        <p class="pop-up__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы
-          опубликуем его на сайте.</p>
-        <div class="pop-up__button-wrapper">
-          <button class="pop-up__button button" type="button" name="button-popup-close">Закрыть окно</button>
-        </div>
-      </section>
-    </div>
-    <div class="pop-up pop-up--failure">
-      <section class="pop-up__window pop-up__window--failure">
-        <h3 class="visually-hidden">Всплывающее окно с сообщением об ошибке во время отправки формы</h3>
-        <b class="pop-up__alert pop-up__alert--failure">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
-        <p class="pop-up__description pop-up__description--failure">Проверьте поля, выделенные красным, скорее всего вы
-          забыли их заполнить</p>
-        <button class="pop-up__button pop-up__button--failure button" type="button" name="button-popup-fail">Oк</button>
-      </section>
-    </div>
   </div>
   </div>
 </body>

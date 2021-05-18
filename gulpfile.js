@@ -61,7 +61,7 @@ exports.scripts = scripts;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build",
     },
     cors: true,
     notify: false,
